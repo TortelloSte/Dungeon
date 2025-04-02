@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import PremiumComparison from './PremiumComparison';
+import FeaturesBlock from './FeaturesBlock';
+
 
 export default function LandingPage() {
   const { t, i18n } = useTranslation();
@@ -9,9 +12,20 @@ export default function LandingPage() {
   return (
     <div className="bg-gradient-to-b from-[#0f0f0f] to-[#1a1a1a] text-white font-sans">
       {/* LANGUAGE SWITCHER */}
-      <div className="absolute top-4 right-4 z-50">
-        <button onClick={() => i18n.changeLanguage('it')} className="mr-2">🇮🇹</button>
-        <button onClick={() => i18n.changeLanguage('en')}>🇬🇧</button>
+      <div className="absolute top-4 right-4 z-50 text-sm text-gray-300">
+        <button
+          onClick={() => i18n.changeLanguage('it')}
+          className={`mr-2 hover:text-yellow-400 ${i18n.language === 'it' ? 'font-bold text-yellow-400' : ''}`}
+        >
+          IT
+        </button>
+        |
+        <button
+          onClick={() => i18n.changeLanguage('en')}
+          className={`ml-2 hover:text-yellow-400 ${i18n.language === 'en' ? 'font-bold text-yellow-400' : ''}`}
+        >
+          EN
+        </button>
       </div>
 
       {/* HERO */}
@@ -70,48 +84,10 @@ export default function LandingPage() {
       </section>
 
       {/* CARATTERISTICHE */}
-      <section className="bg-[#121212] py-20 px-6 max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-10 text-yellow-300">{t('featuresTitle')}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left text-gray-300">
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-semibold text-yellow-400 mb-2">🗺️ {t('feature1')}</h3>
-            <p>Esplora dungeon generati proceduralmente pieni di misteri e trappole.</p>
-          </div>
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-semibold text-yellow-400 mb-2">🃏 {t('feature2')}</h3>
-            <p>Costruisci il tuo mazzo per affrontare ogni situazione con strategia.</p>
-          </div>
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-semibold text-yellow-400 mb-2">🧙 {t('feature3')}</h3>
-            <p>Crea eroi epici con abilità uniche e background coinvolgenti.</p>
-          </div>
-        </div>
-      </section>
-
+      <FeaturesBlock />
+      
       {/* COMPARAZIONE FREE VS PREMIUM */}
-      <section className="py-20 px-6 max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6 text-yellow-300">Free vs Premium</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-yellow-400">
-            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">🌱 {t('free')}</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
-              <li>Personaggio casuale</li>
-              <li>Accesso base ai dungeon</li>
-              <li>Progressione limitata</li>
-              <li>Inventario annotabile</li>
-            </ul>
-          </div>
-          <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-yellow-500">
-            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">🌟 {t('premium')}</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
-              <li>Creazione personaggio avanzata</li>
-              <li>Razze e classi sbloccate</li>
-              <li>Dungeon e missioni esclusive</li>
-              <li>Ricompense leggendarie</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <PremiumComparison />
 
       {/* MAILING LIST */}
       <section className="py-20 px-6 text-center bg-gradient-to-r from-[#0d1a26] to-[#1a2a33]">
