@@ -1,27 +1,29 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export default function PremiumComparison() {
   const [isPremium, setIsPremium] = useState(false);
+  const { t } = useTranslation();
 
   const features = {
     free: [
-      'Personaggio generato casualmente',
-      'Accesso base ai dungeon',
-      'Inventario annotabile',
-      'Progressione limitata',
+      t('free.feature1'),
+      t('free.feature2'),
+      t('free.feature3'),
+      t('free.feature4'),
     ],
     premium: [
-      'Creazione avanzata del personaggio',
-      'Classi e razze sbloccate',
-      'Dungeon esclusivi e ricompense leggendarie',
-      'Statistiche personalizzabili',
+      t('premium.feature1'),
+      t('premium.feature2'),
+      t('premium.feature3'),
+      t('premium.feature4'),
     ],
   };
 
   return (
     <section className="py-20 px-6 max-w-5xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-6 text-yellow-300">Free vs Premium</h2>
+      <h2 className="text-3xl font-bold mb-6 text-yellow-300">{t('comparisonTitle')}</h2>
 
       <div className="flex justify-center mb-8">
         <button
@@ -30,7 +32,7 @@ export default function PremiumComparison() {
             !isPremium ? 'bg-yellow-500 text-black rounded-l-lg' : 'bg-gray-800 text-yellow-400'
           }`}
         >
-          Free
+          {t('free.label')}
         </button>
         <button
           onClick={() => setIsPremium(true)}
@@ -38,7 +40,7 @@ export default function PremiumComparison() {
             isPremium ? 'bg-yellow-500 text-black rounded-r-lg' : 'bg-gray-800 text-yellow-400'
           }`}
         >
-          Premium
+          {t('premium.label')}
         </button>
       </div>
 
@@ -64,8 +66,8 @@ export default function PremiumComparison() {
 
       <div className="mt-6 text-sm text-gray-400 italic">
         {isPremium
-          ? 'Scopri il pieno potenziale del tuo eroe con la versione Premium.'
-          : 'Inizia il tuo viaggio gratuitamente, senza impegno.'}
+          ? t('premium.description')
+          : t('free.description')}
       </div>
     </section>
   );

@@ -4,14 +4,41 @@
     "heroSubtitle": "Un viaggio epico nel cuore delle tenebre",
     "cta": "Partecipa alla Beta",
     "whatIsTitle": "Cos'è 'Not' MINI Crawler?",
+    "Testo1":"'Not' MINI Crawler è un gioco fantasy strategico dove ogni decisione può significare gloria... o rovina.",
+    "Testo2":"Crea il tuo eroe, esplora dungeon generati proceduralmente, combatti con un sistema a carte dinamicoe svela antichi segreti in un mondo avvolto dal mistero.",
+    "Testo3":"Ogni avventura è unica. Ogni passo può cambiare il tuo destino.",
     "trailerTitle": "Trailer Ufficiale",
     "featuresTitle": "Caratteristiche Principali",
+    "Testo4":"Dungeon unici generati proceduralmente con eventi misteriosi e percorsi nascosti",
+    "Testo5":"Sistema a turni che influenza ogni combattimento, decisione e sviluppo del personaggio.",
+    "Testo6":"Ogni eroe è diverso: puoi crearne uno con abilità uniche oppure scoprire quelli casuali.",
     "feature1": "Esplorazione Profonda",
     "feature2": "Combattimento a turni",
     "feature3": "Personaggi Unici",
-    "free": "Free",
-    "premium": "Premium",
-    "newsletterTitle": "Resta aggiornato su Dungeon Crawler",
-    "newsletterDesc": "Iscriviti per ricevere chiavi beta, aggiornamenti e novità."
+    "newsletterTitle": "Resta aggiornato su 'Not' MINI Crawler",
+    "newsletterDesc": "Iscriviti per ricevere chiavi beta, aggiornamenti e novità.",
+    "comparisonTitle": "Free vs Premium",
+    "free": {
+      "label": "Free",
+      "feature1": "Personaggio generato casualmente",
+      "feature2": "Accesso base ai dungeon",
+      "feature3": "Inventario annotabile",
+      "feature4": "Progressione limitata",
+      "description": "Inizia il tuo viaggio gratuitamente, senza impegno."
+    },
+    "premium": {
+      "label": "Premium",
+      "feature1": "Creazione avanzata del personaggio",
+      "feature2": "Classi e razze sbloccate",
+      "feature3": "Dungeon esclusivi e ricompense leggendarie",
+      "feature4": "Statistiche personalizzabili",
+      "description": "Scopri il pieno potenziale del tuo eroe con la versione Premium."
+    },
+  "newsletter": {
+  "placeholder": "La tua email",
+  "submit": "Iscriviti",
+  "loading": "Invio...",
+  "success": "Iscrizione completata!",
+  "error": "Errore. Riprova."
+}
   }
-  

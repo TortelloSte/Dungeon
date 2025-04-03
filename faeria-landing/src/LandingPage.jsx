@@ -35,25 +35,18 @@ export default function LandingPage() {
 
       {/* COS'É DUNGEON CRAWLER */}
       <section id="features" className="py-20 px-6 max-w-5xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-4 text-yellow-300" data-aos="fade-up">{t('whatIsTitle')} </h2>
-        <p className="text-lg text-gray-300 leading-relaxed mb-3" data-aos="fade-up">
-          Dungeon Crawler è un gioco fantasy strategico dove ogni decisione può significare gloria... o rovina.
-        </p>
-        <p className="text-lg text-gray-300 leading-relaxed mb-3" data-aos="fade-up" >
-          Crea il tuo eroe, esplora dungeon generati proceduralmente, combatti con un sistema a carte dinamico
-          e svela antichi segreti in un mondo avvolto dal mistero.
-        </p>
-        <p className="text-lg text-gray-300 leading-relaxed italic" data-aos="fade-up">
-          Ogni avventura è unica. Ogni passo può cambiare il tuo destino.
-        </p>
+      <h2 className="text-3xl font-bold mb-4 text-yellow-300" data-aos="fade-up">{t('whatIsTitle')}</h2>
+        <p className="text-lg text-gray-300 leading-relaxed mb-3" data-aos="fade-up">{t('Testo1')} </p>
+        <p className="text-lg text-gray-300 leading-relaxed mb-3" data-aos="fade-up" >{t('Testo2')}</p>
+        <p className="text-lg text-gray-300 leading-relaxed italic" data-aos="fade-up">{t('Testo3')}</p>
       </section>
 
       {/* TRAILER */}
       <section id="trailer" className="py-20 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6 text-yellow-300">{t('trailerTitle')}</h2>
         <div className="relative w-full max-w-4xl mx-auto shadow-lg rounded-lg overflow-hidden">
-          <img src="/images/trailer-placeholder.jpg" alt="Trailer"
-            className="w-full object-cover"
+          <img src="/images/trailer-placeholder.jpg" alt="Immagine placeholder trailer"
+            className="w-full object-cover" loading="lazy"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="bg-black bg-opacity-60 p-4 rounded-full">
@@ -61,9 +54,6 @@ export default function LandingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-4.586-2.65A1 1 0 009 9.382v5.236a1 1 0 001.166.964l4.586-1.192a1 1 0 000-1.922z" />
               </svg>
             </div>
-          </div>
-          <div className="absolute bottom-4 right-4 text-sm text-gray-300 italic">
-            Trailer in arrivo...
           </div>
         </div>
       </section>
@@ -84,9 +74,19 @@ export default function LandingPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black text-center py-6 text-gray-500">
+      <footer className="bg-black text-center py-6 text-gray-500 text-sm">
         <p>© 2025 Mini muuu. Un mondo creato con magia e codice.</p>
+        <div className="mt-2 space-x-2">
+          <a href="https://kickstarter.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
+            Kickstarter
+          </a>
+          <span>·</span>
+          <a href="https://minimuuu.it" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">
+            MiniMuuu.it
+          </a>
+        </div>
       </footer>
+
     </div>
   );
 }

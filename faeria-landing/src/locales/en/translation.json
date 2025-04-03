@@ -4,13 +4,42 @@
     "heroSubtitle": "An epic journey into the heart of darkness",
     "cta": "Join the Beta",
     "whatIsTitle": "What is 'Not' MINI Crawler?",
+    "Testo1":"'Not' MINI Crawler is a strategic fantasy game where every decision can mean glory... or ruin.",
+    "Testo2":"Create your own hero, explore procedurally generated dungeons, battle with a dynamic card system, and uncover ancient secrets in a world shrouded in mystery.",
+    "Testo3":"Every adventure is unique. Every step can change your destiny.",
     "trailerTitle": "Official Trailer",
     "featuresTitle": "Key Features",
+    "Testo4":"Unique procedurally generated dungeons with mysterious events and hidden paths",
+    "Testo5":"Turn-based system that influences every fight, decision, and character development.",
+    "Testo6":"Every hero is different: you can create one with unique abilities or discover random ones.",
     "feature1": "Deep Exploration",
     "feature2": "Turn-based Combat",
     "feature3": "Unique Characters",
-    "free": "Free",
-    "premium": "Premium",
     "newsletterTitle": "Stay updated on 'Not' MINI Crawler",
-    "newsletterDesc": "Sign up to get beta keys, updates and news."
-  }
+    "newsletterDesc": "Sign up to get beta keys, updates and news.",
+    "comparisonTitle": "Free vs Premium",
+    "free": {
+      "label": "Free",
+      "feature1": "Randomly generated character",
+      "feature2": "Basic dungeon access",
+      "feature3": "Note-based inventory",
+      "feature4": "Limited progression",
+      "description": "Start your journey for free, no commitment."
+    },
+    "premium": {
+      "label": "Premium",
+      "feature1": "Advanced character creation",
+      "feature2": "Unlocked classes and races",
+      "feature3": "Exclusive dungeons and legendary rewards",
+      "feature4": "Customizable stats",
+      "description": "Unleash your hero's full potential with Premium."
+    },
+  "newsletter": {
+  "placeholder": "Your email",
+  "submit": "Subscribe",
+  "loading": "Sending...",
+  "success": "Successfully subscribed!",
+  "error": "Error. Please try again."
+}
+}
+    

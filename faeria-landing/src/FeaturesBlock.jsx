@@ -15,7 +15,7 @@ export default function FeaturesBlock() {
             <span className="text-yellow-400 text-3xl">🗺️</span>
           </div>
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">{t('feature1')}</h3>
-          <p className="text-gray-300">Dungeon unici generati proceduralmente con eventi misteriosi e percorsi nascosti.</p>
+          <p className="text-gray-300">{t('Testo4')}</p>
           <div className="hidden md:block absolute right-[-40px] top-[50%] w-10 h-1 bg-yellow-400 rotate-0"></div>
         </div>
 
@@ -25,7 +25,7 @@ export default function FeaturesBlock() {
             <span className="text-yellow-400 text-3xl">🃏</span>
           </div>
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">{t('feature2')}</h3>
-          <p className="text-gray-300">Sistema a carte che influenza ogni combattimento, decisione e sviluppo del personaggio.</p>
+          <p className="text-gray-300">{t('Testo5')}</p>
           <div className="hidden md:block absolute right-[-40px] top-[50%] w-10 h-1 bg-yellow-400 rotate-0"></div>
         </div>
 
@@ -35,7 +35,7 @@ export default function FeaturesBlock() {
             <span className="text-yellow-400 text-3xl">🧙</span>
           </div>
           <h3 className="text-xl font-semibold text-yellow-400 mb-2">{t('feature3')}</h3>
-          <p className="text-gray-300">Ogni eroe è diverso: puoi crearne uno con abilità uniche oppure scoprire quelli casuali.</p>
+          <p className="text-gray-300">{t('Testo6')}</p>
         </div>
       </div>
     </section>
