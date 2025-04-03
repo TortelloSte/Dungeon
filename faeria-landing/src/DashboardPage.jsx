@@ -7,7 +7,7 @@ export default function DashboardPage() {
   const [showEditModal, setShowEditModal] = useState(false);
   const [character, setCharacter] = useState(null);
 
-  const premium = false; // CAMBIA QUI per testare modalità free/premium
+  const premium = true; // CAMBIA QUI per testare modalità free/premium
 
   // Stati per il modale
   const [selectedClass, setSelectedClass] = useState('');
