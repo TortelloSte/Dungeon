@@ -4,32 +4,17 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import PremiumComparison from './PremiumComparison';
 import FeaturesBlock from './FeaturesBlock';
-
+import NewsletterForm from './NewsletterForm';
+import Navbar from './Navbar';
 
 export default function LandingPage() {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="bg-gradient-to-b from-[#0f0f0f] to-[#1a1a1a] text-white font-sans">
-      {/* LANGUAGE SWITCHER */}
-      <div className="absolute top-4 right-4 z-50 text-sm text-gray-300">
-        <button
-          onClick={() => i18n.changeLanguage('it')}
-          className={`mr-2 hover:text-yellow-400 ${i18n.language === 'it' ? 'font-bold text-yellow-400' : ''}`}
-        >
-          IT
-        </button>
-        |
-        <button
-          onClick={() => i18n.changeLanguage('en')}
-          className={`ml-2 hover:text-yellow-400 ${i18n.language === 'en' ? 'font-bold text-yellow-400' : ''}`}
-        >
-          EN
-        </button>
-      </div>
-
+    <div className="bg-gradient-to-b from-[#0f0f0f] to-[#1a1a1a] text-white font-sans scroll-smooth">
+      <Navbar />
       {/* HERO */}
-      <section className="h-screen relative flex flex-col items-center justify-center text-center px-4 bg-cover bg-center"
+      <section id="top" className="h-screen relative flex flex-col items-center justify-center text-center px-4 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <motion.div
@@ -49,22 +34,22 @@ export default function LandingPage() {
       </section>
 
       {/* COS'É DUNGEON CRAWLER */}
-      <section className="py-20 px-6 max-w-5xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-4 text-yellow-300">{t('whatIsTitle')}</h2>
-        <p className="text-lg text-gray-300 leading-relaxed mb-3">
+      <section id="features" className="py-20 px-6 max-w-5xl mx-auto text-center">
+      <h2 className="text-3xl font-bold mb-4 text-yellow-300" data-aos="fade-up">{t('whatIsTitle')} </h2>
+        <p className="text-lg text-gray-300 leading-relaxed mb-3" data-aos="fade-up">
           Dungeon Crawler è un gioco fantasy strategico dove ogni decisione può significare gloria... o rovina.
         </p>
-        <p className="text-lg text-gray-300 leading-relaxed mb-3">
+        <p className="text-lg text-gray-300 leading-relaxed mb-3" data-aos="fade-up" >
           Crea il tuo eroe, esplora dungeon generati proceduralmente, combatti con un sistema a carte dinamico
           e svela antichi segreti in un mondo avvolto dal mistero.
         </p>
-        <p className="text-lg text-gray-300 leading-relaxed italic">
+        <p className="text-lg text-gray-300 leading-relaxed italic" data-aos="fade-up">
           Ogni avventura è unica. Ogni passo può cambiare il tuo destino.
         </p>
       </section>
 
       {/* TRAILER */}
-      <section className="py-20 px-6 max-w-4xl mx-auto text-center">
+      <section id="trailer" className="py-20 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6 text-yellow-300">{t('trailerTitle')}</h2>
         <div className="relative w-full max-w-4xl mx-auto shadow-lg rounded-lg overflow-hidden">
           <img src="/images/trailer-placeholder.jpg" alt="Trailer"
@@ -85,24 +70,17 @@ export default function LandingPage() {
 
       {/* CARATTERISTICHE */}
       <FeaturesBlock />
-      
+
       {/* COMPARAZIONE FREE VS PREMIUM */}
-      <PremiumComparison />
+      <section id="premium">
+        <PremiumComparison />
+      </section>
 
       {/* MAILING LIST */}
-      <section className="py-20 px-6 text-center bg-gradient-to-r from-[#0d1a26] to-[#1a2a33]">
+      <section id="newsletter" className="py-20 px-6 text-center bg-gradient-to-r from-[#0d1a26] to-[#1a2a33]">
         <h2 className="text-3xl font-bold mb-4 text-white">{t('newsletterTitle')}</h2>
         <p className="text-gray-400 mb-6">{t('newsletterDesc')}</p>
-        <div className="flex justify-center flex-col sm:flex-row items-center gap-4 max-w-md mx-auto">
-          <input
-            type="email"
-            placeholder="La tua email"
-            className="px-4 py-3 rounded-lg w-full sm:w-2/3 bg-white text-black"
-          />
-          <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg transition w-full sm:w-auto">
-            Iscriviti
-          </button>
-        </div>
+        <NewsletterForm />
       </section>
 
       {/* FOOTER */}
