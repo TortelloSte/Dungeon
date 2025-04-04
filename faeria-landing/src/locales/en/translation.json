@@ -4,9 +4,12 @@
     "heroSubtitle": "An epic journey into the heart of darkness",
     "cta": "Join the Beta",
     "whatIsTitle": "What is 'Not' MINI Crawler?",
-    "Testo1":"'Not' MINI Crawler is a strategic fantasy game where every decision can mean glory... or ruin.",
-    "Testo2":"Create your own hero, explore procedurally generated dungeons, battle with a dynamic card system, and uncover ancient secrets in a world shrouded in mystery.",
-    "Testo3":"Every adventure is unique. Every step can change your destiny.",
+    "Testo1": "Here, you don’t just enter a world… you shape it.",
+    "Testo2": "Craft your own adventure from the very beginning: choose how your hero is born, what path they follow, and what they’ll face along the way.",
+    "Testo3": "Explore forgotten ruins, battle legendary creatures, and alter every element of the world around you.",
+    "Testo7": "Alone or with your companions, every story is different. Every choice matters.",
+    "Testo8": "This isn’t a game that leads you.",
+    "Testo9": "It’s a world that listens.",
     "trailerTitle": "Official Trailer",
     "featuresTitle": "Key Features",
     "Testo4":"Unique procedurally generated dungeons with mysterious events and hidden paths",
@@ -40,6 +43,9 @@
   "loading": "Sending...",
   "success": "Successfully subscribed!",
   "error": "Error. Please try again."
-}
+  },
+  "watchTrailer": "Watch the trailer",
+  "trailerNote": "Turn on the sound and step into the legend."
+
 }
     

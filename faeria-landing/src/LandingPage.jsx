@@ -25,11 +25,22 @@ export default function LandingPage() {
         >
           <h1 className="text-5xl md:text-6xl font-bold text-yellow-300 drop-shadow-lg">{t('heroTitle')}</h1>
           <p className="text-xl md:text-2xl mt-4 text-gray-200">{t('heroSubtitle')}</p>
-          <Link to="/login">
-            <button className="mt-8 bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg shadow-xl transition">
-              {t('cta')}
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/login">
+              <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg shadow-xl transition">
+                {t('cta')}
+              </button>
+            </Link>
+            <button
+              onClick={() => {
+                const el = document.getElementById('trailer');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="bg-transparent border border-yellow-500 hover:bg-yellow-500 hover:text-black text-yellow-300 font-bold py-3 px-6 rounded-lg transition"
+            >
+              {t('watchTrailer') || 'Guarda il trailer'}
             </button>
-          </Link>
+          </div>
         </motion.div>
       </section>
 
@@ -39,24 +50,33 @@ export default function LandingPage() {
         <p className="text-lg text-gray-300 leading-relaxed mb-3" data-aos="fade-up">{t('Testo1')} </p>
         <p className="text-lg text-gray-300 leading-relaxed mb-3" data-aos="fade-up" >{t('Testo2')}</p>
         <p className="text-lg text-gray-300 leading-relaxed italic" data-aos="fade-up">{t('Testo3')}</p>
+        <p className="text-lg text-gray-300 leading-relaxed italic" data-aos="fade-up">{t('Testo7')}</p>
+        <p className="text-lg text-gray-300 leading-relaxed italic" data-aos="fade-up">{t('Testo8')}</p>
+        <p className="text-lg text-gray-300 leading-relaxed italic" data-aos="fade-up">{t('Testo9')}</p>
       </section>
 
       {/* TRAILER */}
       <section id="trailer" className="py-20 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6 text-yellow-300">{t('trailerTitle')}</h2>
+
         <div className="relative w-full max-w-4xl mx-auto shadow-lg rounded-lg overflow-hidden">
-          <img src="/images/trailer-placeholder.jpg" alt="Immagine placeholder trailer"
-            className="w-full object-cover" loading="lazy"
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-black bg-opacity-60 p-4 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-4.586-2.65A1 1 0 009 9.382v5.236a1 1 0 001.166.964l4.586-1.192a1 1 0 000-1.922z" />
-              </svg>
-            </div>
-          </div>
+          <video
+            className="w-full rounded-lg shadow-lg"
+            controls
+            preload="auto"
+            poster="/images/trailer-cover.jpg"
+          >
+            <source src="/video/tutorial.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
+
+        <p className="mt-4 text-sm text-gray-400 italic">
+          {t('trailerNote') || 'Attiva l’audio e immergiti nella leggenda.'}
+        </p>
+
       </section>
+
 
       {/* CARATTERISTICHE */}
       <FeaturesBlock />
