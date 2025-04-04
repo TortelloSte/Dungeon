@@ -3,6 +3,8 @@
     "loading": "Loading...",
     "heroSubtitle": "Un viaggio epico nel cuore delle tenebre",
     "cta": "Partecipa alla Beta",
+    "Coming":"Coming soon...",
+    "betaDesc":"Stiamo preparando qualcosa di speciale. Lascia la tua email per ricevere l’accesso anticipato e novità esclusive.",
     "whatIsTitle": "Cos'è 'Not' MINI Crawler?",
     "Testo1":"Qui non entri in un mondo... lo crei.",
     "Testo2": "Costruisci la tua avventura su misura, partendo dall’inizio: scegli come nasce il tuo eroe, quale sentiero seguirà e cosa troverà lungo la strada.",
@@ -12,12 +14,12 @@
     "Testo9" : "È un mondo che ti ascolta.",
     "trailerTitle": "Trailer Ufficiale",
     "featuresTitle": "Caratteristiche Principali",
-    "Testo4":"Dungeon unici generati proceduralmente con eventi misteriosi e percorsi nascosti",
-    "Testo5":"Sistema a turni che influenza ogni combattimento, decisione e sviluppo del personaggio.",
-    "Testo6":"Ogni eroe è diverso: puoi crearne uno con abilità uniche oppure scoprire quelli casuali.",
-    "feature1": "Esplorazione Profonda",
-    "feature2": "Combattimento a turni",
-    "feature3": "Personaggi Unici",
+    "Testo4":"Ogni avventura si svolge su una mappa generata proceduralmente. Nessun dungeon è mai lo stesso. Ogni volta, un mondo da scoprire.",
+    "Testo5":"Affronta nemici imprevedibili con un sistema a turni profondo e dinamico. Ogni battaglia è una sfida diversa.",
+    "Testo6":"Ogni eroe è diverso: generato o creato su misura, con storie, abilità e tratti che rendono ogni partita unica.",
+    "feature1": "Mappe sempre nuove",
+    "feature2": "Combattimento strategico a turni",
+    "feature3": "Personaggi unici e irripetibili",
     "newsletterTitle": "Resta aggiornato su 'Not' MINI Crawler",
     "newsletterDesc": "Iscriviti per ricevere chiavi beta, aggiornamenti e novità.",
     "comparisonTitle": "Free vs Premium",
@@ -45,6 +47,6 @@
   "error": "Errore. Riprova."
   },
   "watchTrailer": "Guarda il trailer",
-  "trailerNote": "Attiva l’audio e immergiti nella leggenda."
-
+  "trailerNote": "Attiva l’audio e immergiti nella leggenda.",
+  "backHome":"← Torna alla Home"
 }

@@ -26,9 +26,9 @@ export default function LandingPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-yellow-300 drop-shadow-lg">{t('heroTitle')}</h1>
           <p className="text-xl md:text-2xl mt-4 text-gray-200">{t('heroSubtitle')}</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/login">
-              <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg shadow-xl transition">
-                {t('cta')}
+            <Link to="/beta">
+              <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg shadow-xl transition w-full sm:w-auto">
+              {t('cta')}
               </button>
             </Link>
             <button
@@ -36,9 +36,9 @@ export default function LandingPage() {
                 const el = document.getElementById('trailer');
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="bg-transparent border border-yellow-500 hover:bg-yellow-500 hover:text-black text-yellow-300 font-bold py-3 px-6 rounded-lg transition"
+              className="border border-yellow-500 hover:bg-yellow-500 hover:text-black text-yellow-300 font-bold py-3 px-6 rounded-lg shadow-xl transition w-full sm:w-auto"
             >
-              {t('watchTrailer') || 'Guarda il trailer'}
+              {t('watchTrailer')}
             </button>
           </div>
         </motion.div>

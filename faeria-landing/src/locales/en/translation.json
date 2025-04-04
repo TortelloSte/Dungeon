@@ -3,6 +3,8 @@
     "loading": "Loading...",
     "heroSubtitle": "An epic journey into the heart of darkness",
     "cta": "Join the Beta",
+    "Coming":"Coming soon...",
+    "betaDesc":"We are preparing something special. Leave your email to receive early access and exclusive news.",
     "whatIsTitle": "What is 'Not' MINI Crawler?",
     "Testo1": "Here, you don’t just enter a world… you shape it.",
     "Testo2": "Craft your own adventure from the very beginning: choose how your hero is born, what path they follow, and what they’ll face along the way.",
@@ -12,12 +14,12 @@
     "Testo9": "It’s a world that listens.",
     "trailerTitle": "Official Trailer",
     "featuresTitle": "Key Features",
-    "Testo4":"Unique procedurally generated dungeons with mysterious events and hidden paths",
-    "Testo5":"Turn-based system that influences every fight, decision, and character development.",
-    "Testo6":"Every hero is different: you can create one with unique abilities or discover random ones.",
-    "feature1": "Deep Exploration",
-    "feature2": "Turn-based Combat",
-    "feature3": "Unique Characters",
+    "Testo4": "Unique procedurally generated dungeons with mysterious events and hidden paths.",
+    "Testo5": "Turn-based system that influences every fight, decision, and character development.",
+    "Testo6": "Every hero is different: you can create one with unique abilities or discover random ones.",
+    "feature1": "Procedural World",
+    "feature2": "Tactical Combat",
+    "feature3": "Unique Heroes",
     "newsletterTitle": "Stay updated on 'Not' MINI Crawler",
     "newsletterDesc": "Sign up to get beta keys, updates and news.",
     "comparisonTitle": "Free vs Premium",
@@ -45,7 +47,7 @@
   "error": "Error. Please try again."
   },
   "watchTrailer": "Watch the trailer",
-  "trailerNote": "Turn on the sound and step into the legend."
-
+  "trailerNote": "Turn on the sound and step into the legend.",
+  "backHome":"← Back to HomePage"
 }
     

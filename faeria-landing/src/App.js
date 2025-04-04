@@ -6,6 +6,7 @@ import SignupPage from './SignupPage';
 import DashboardPage from './DashboardPage';
 import PrivateRoute from './PrivateRoute';
 import LoadingScreen from './LoadingScreen';
+import BetaPage from './BetaPage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ function App() {
             </PrivateRoute>
           }
         />
+        <Route path="/beta" element={<BetaPage />} />
       </Routes>
     </Router>
   );
