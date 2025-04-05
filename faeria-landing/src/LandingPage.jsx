@@ -9,17 +9,17 @@ import Navbar from './Navbar';
 import CookieConsent from 'react-cookie-consent';
 import ChatbotWidget from './ChatbotWidget';
 
-
 export default function LandingPage() {
   const { t, i18n } = useTranslation();
   const year = new Date().getFullYear();
   const [showModal, setShowModal] = useState(null); // 'privacy' | 'terms' | 'contatti' | null
+  const [showPrivacy, setShowPrivacy] = useState(false);
+
   const trackEvent = (goal) => {
     if (typeof window !== 'undefined' && window.plausible) {
       window.plausible(goal);
     }
   };
-  
 
   return (
     <div className="bg-gradient-to-b from-[#0f0f0f] to-[#1a1a1a] text-white font-sans scroll-smooth">
@@ -116,18 +116,30 @@ export default function LandingPage() {
       <CookieConsent
         location="bottom"
         buttonText={t('cookie.accept')}
-        cookieName="notminicrawlerCookies"
-        style={{ background: '#1f1f1f', color: '#eee', fontSize: '14px' }}
-        buttonStyle={{ background: '#facc15', color: '#000', fontWeight: 'bold', borderRadius: '8px', padding: '6px 16px' }}
-        expires={0} // <- questo lo forza a mostrarsi ad ogni nuova sessione
-        disableCookies={true} // <- disabilita il salvataggio del cookie
+        cookieName="notminicrawler_cookies"
+        style={{ background: '#111', color: '#ccc' }}
+        buttonStyle={{
+          background: '#facc15',
+          color: '#000',
+          fontWeight: 'bold',
+          borderRadius: '8px',
+          padding: '8px 16px'
+        }}
+        expires={365}
+        enableDeclineButton={false}
+        sameSite="strict"
       >
-        {t('cookie.message')} <Link to="/privacy" className="underline text-yellow-400">{t('cookie.link')}</Link>.
+        {t('cookie.message')}{' '}
+        <button
+          onClick={() => setShowModal('privacy')}
+          className="underline text-yellow-400"
+        >
+          {t('cookie.link')}
+        </button>
       </CookieConsent>
 
       {/* CHATBOT */}
-        <ChatbotWidget />
-
+      <ChatbotWidget />
 
       {/* MODAL DOCUMENTI */}
       {showModal && (
