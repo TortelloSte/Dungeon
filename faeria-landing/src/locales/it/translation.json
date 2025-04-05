@@ -44,9 +44,76 @@
   "submit": "Iscriviti",
   "loading": "Invio...",
   "success": "Iscrizione completata!",
-  "error": "Errore. Riprova."
-  },
+  "error": "Errore. Riprova.",
+  "exists": "Questa email è già iscritta.",
+  "invalid": "Inserisci una email valida con un dominio conosciuto."
+    },
   "watchTrailer": "Guarda il trailer",
   "trailerNote": "Attiva l’audio e immergiti nella leggenda.",
-  "backHome":"← Torna alla Home"
+  "backHome":"← Torna alla Home",
+  "footer": {
+  "rights": "Tutti i diritti riservati.",
+  "privacy": "Privacy",
+  "terms": "Termini",
+  "contact": "Contatti"
+  },
+  "cookie": {
+    "accept": "Accetta",
+    "message": "Utilizziamo i cookie per migliorare l'esperienza utente. Proseguendo accetti la nostra",
+    "link": "Privacy Policy"
+  },
+  "modal": {
+  "privacy": "Tutti i contenuti presenti su questo sito, inclusi testi, immagini, grafica, musica e codice, sono protetti da copyright e appartengono a Mini Muuu™ o ai rispettivi autori. È vietata la riproduzione, la modifica o la distribuzione non autorizzata.\n\nRaccogliamo solo le informazioni strettamente necessarie, come l’indirizzo email per la newsletter o l’accesso al sito. I dati sono trattati nel rispetto del Regolamento Europeo GDPR. Non saranno mai ceduti a terzi. Puoi richiedere la cancellazione scrivendo a teamminimuuu@gmail.com.\n\nL’utilizzo del sito implica l’accettazione di queste condizioni.",
+  "contatti": "Per richieste, segnalazioni o supporto puoi contattarci via email all’indirizzo teamminimuuu@gmail.com. Cerchiamo di rispondere entro 48 ore. Se hai bisogno urgente, puoi usare anche la chat live disponibile sul sito durante gli orari attivi."
+  },
+    "chat": {
+    "label": "Chatta con noi",
+    "title": "Serve aiuto?",
+    "choose": "Scegli una domanda oppure contattaci direttamente:",
+    "back": "Torna indietro",
+    "otherQuestions": "Hai altre domande? Scrivici",
+    "faq1": {
+      "q": "Come posso partecipare alla beta?",
+      "a": "Puoi iscriverti cliccando su 'Partecipa alla Beta' nella homepage e riceverai info via email."
+    },
+    "faq2": {
+      "q": "Il gioco sarà gratuito?",
+      "a": "Sì, ci sarà una versione gratuita con opzioni premium per contenuti extra."
+    },
+    "faq3": {
+      "q": "Posso giocare con i miei amici?",
+      "a": "Assolutamente sì! Puoi creare avventure condivise e vivere l’esperienza insieme."
+    },
+    "faq4": {
+      "q": "Quando uscirà il gioco?",
+      "a": "Stiamo lavorando duramente! La data ufficiale sarà annunciata tramite newsletter e social."
+    },
+    "faq5": {
+      "q": "Posso creare il mio personaggio?",
+      "a": "Sì! Il sistema di creazione del personaggio è uno degli aspetti chiave del gioco."
+    },
+    "form": {
+      "name": "Nome",
+      "surname": "Cognome",
+      "email": "La tua email",
+      "message": "Scrivi il tuo messaggio...",
+      "send": "Invia",
+      "success": "Messaggio inviato! Ti risponderemo presto."
+    },
+    "errors": {
+    "invalidEmail": "Email non valida.",
+    "badWords": "Il messaggio contiene termini non consentiti.",
+    "generic": "Errore durante l'invio. Riprova più tardi."
+  }
+  },
+  "beta": {
+  "placeholder": "La tua email",
+  "submit": "Partecipa alla Beta",
+  "success": "Iscrizione completata con successo!",
+  "duplicate": "Questa email è già registrata.",
+  "error": "Si è verificato un errore. Riprova."
 }
+
+}
+
+
