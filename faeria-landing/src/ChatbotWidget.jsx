@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { supabase } from './supabaseClient';
-
 
 export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,52 +11,6 @@ export default function ChatbotWidget() {
   const [submitted, setSubmitted] = useState(false);
   const { t } = useTranslation();
 
-  const bannedWords = ['cazzo', 'merda', 'fuck', 'shit', 'bastard', 'stronzo', "fanculo", "negro", "nigga", "nigger", "hitler", "mussolini"];
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError('');
-    setSubmitted(false);
-  
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      return setError(t('chat.errors.invalidEmail'));
-    }
-  
-    const hasBadWords = bannedWords.some((word) =>
-      formData.message.toLowerCase().includes(word)
-    );
-    if (hasBadWords) {
-      return setError(t('chat.errors.badWords'));
-    }
-  
-    const { error } = await supabase.from('chat_messages').insert([{
-      name: formData.name,
-      surname: formData.surname,
-      email: formData.email,
-      message: formData.message,
-    }]);
-  
-    if (error) {
-      setError(t('chat.errors.generic') || 'Errore durante l\'invio.');
-    } else {
-      setSubmitted(true);
-      setFormData({ name: '', surname: '', email: '', message: '' });
-    }
-  };
-  
-
-  const handleToggle = () => {
-    if (isOpen) {
-      // reset stato
-      setSelectedFaq(null);
-      setShowContactForm(false);
-      setSubmitted(false);
-      setError('');
-    }
-    setIsOpen(!isOpen);
-  };
-
   const faq = [
     { question: t('chat.faq1.q'), answer: t('chat.faq1.a') },
     { question: t('chat.faq2.q'), answer: t('chat.faq2.a') },
@@ -66,6 +18,28 @@ export default function ChatbotWidget() {
     { question: t('chat.faq4.q'), answer: t('chat.faq4.a') },
     { question: t('chat.faq5.q'), answer: t('chat.faq5.a') }
   ];
+
+  const bannedWords = ['cazzo', 'merda', 'fuck', 'shit', 'bastard', 'stronzo'];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setError('');
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      return setError(t('chat.errors.invalidEmail'));
+    }
+
+    const hasBadWords = bannedWords.some((word) =>
+      formData.message.toLowerCase().includes(word)
+    );
+    if (hasBadWords) {
+      return setError(t('chat.errors.badWords'));
+    }
+
+    setSubmitted(true);
+    setFormData({ name: '', surname: '', email: '', message: '' });
+  };
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
@@ -79,7 +53,7 @@ export default function ChatbotWidget() {
           >
             <div className="flex justify-between items-center mb-2">
               <h3 className="font-bold text-yellow-400">{t('chat.title')}</h3>
-              <button onClick={handleToggle} className="text-yellow-400">✕</button>
+              <button onClick={() => setIsOpen(false)} className="text-yellow-400">✕</button>
             </div>
 
             {!selectedFaq && !showContactForm ? (
@@ -166,12 +140,15 @@ export default function ChatbotWidget() {
         )}
       </AnimatePresence>
 
-      <button
-        onClick={handleToggle}
+      <motion.button
+        onClick={() => setIsOpen(!isOpen)}
         className="bg-yellow-400 text-black px-4 py-2 rounded-full shadow-lg hover:bg-yellow-300 transition"
+        initial={{ y: 0 }}
+        animate={{ y: [0, -10, 0] }}
+        transition={{ duration: 0.6, ease: 'easeInOut', repeat: 1 }}
       >
         💬 {t('chat.label')}
-      </button>
+      </motion.button>
     </div>
   );
 }
