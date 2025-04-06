@@ -42,7 +42,8 @@ export default function ChatbotWidget() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed right-4 bottom-6 sm:bottom-8 md:bottom-10 z-50 pointer-events-none">
+      <div className="pointer-events-auto">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -53,9 +54,19 @@ export default function ChatbotWidget() {
           >
             <div className="flex justify-between items-center mb-2">
               <h3 className="font-bold text-yellow-400">{t('chat.title')}</h3>
-              <button onClick={() => setIsOpen(false)} className="text-yellow-400">✕</button>
+              <button
+                onClick={() => {
+                  setIsOpen(false);
+                  setSelectedFaq(null);
+                  setShowContactForm(false);
+                  setSubmitted(false);
+                  setError('');
+                }}
+                className="text-yellow-400"
+              >
+                ✕
+              </button>
             </div>
-
             {!selectedFaq && !showContactForm ? (
               <div className="space-y-2">
                 <p className="text-sm text-gray-400 mb-2">{t('chat.choose')}</p>
@@ -145,10 +156,11 @@ export default function ChatbotWidget() {
         className="bg-yellow-400 text-black px-4 py-2 rounded-full shadow-lg hover:bg-yellow-300 transition"
         initial={{ y: 0 }}
         animate={{ y: [0, -10, 0] }}
-        transition={{ duration: 0.6, ease: 'easeInOut', repeat: 1 }}
+        transition={{ duration: 0.6, ease: 'easeInOut'}}
       >
         💬 {t('chat.label')}
       </motion.button>
+      </div>
     </div>
   );
 }
