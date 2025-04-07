@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="flex space-x-6 items-center justify-center">
           <a href="#features" className="hover:text-yellow-400 transition">About</a>
           <a href="#newsletter" className="hover:text-yellow-400 transition">Newsletter</a>
-          {/* <RouterLink to="/login" className="hover:text-yellow-400 transition">Login</RouterLink> */}
+          <RouterLink to="/login" className="hover:text-yellow-400 transition">Login</RouterLink>
         </div>
   
         {/* Selettore lingua a destra */}

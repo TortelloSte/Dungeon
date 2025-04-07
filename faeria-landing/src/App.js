@@ -8,6 +8,7 @@ import PrivateRoute from './PrivateRoute';
 import LoadingScreen from './LoadingScreen';
 import BetaPage from './BetaPage';
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 
