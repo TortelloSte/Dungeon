@@ -13,7 +13,8 @@
     "Testo8" : "Questo non è un gioco che ti guida.",
     "Testo9" : "È un mondo che ti ascolta.",
     "trailerTitle": "Trailer Ufficiale",
-    "featuresTitle": "Caratteristiche Principali",
+    "featuresTitle": "Perchè sceglierci?",
+    "featuresIntro": "Scopri le caratteristiche che rendono unico il nostro gioco: ogni partita sarà una nuova avventura.",
     "Testo4":"Ogni avventura si svolge su una mappa generata proceduralmente. Nessun dungeon è mai lo stesso. Ogni volta, un mondo da scoprire.",
     "Testo5":"Affronta nemici imprevedibili con un sistema a turni profondo e dinamico. Ogni battaglia è una sfida diversa.",
     "Testo6":"Ogni eroe è diverso: generato o creato su misura, con storie, abilità e tratti che rendono ogni partita unica.",
@@ -32,13 +33,20 @@
       "description": "Inizia il tuo viaggio gratuitamente, senza impegno."
     },
     "premium": {
-      "label": "Premium",
-      "feature1": "Creazione avanzata del personaggio",
-      "feature2": "Classi e razze sbloccate",
-      "feature3": "Dungeon esclusivi e ricompense leggendarie",
-      "feature4": "Statistiche personalizzabili",
-      "description": "Scopri il pieno potenziale del tuo eroe con la versione Premium."
-    },
+    "description": "Perfetto per chi cerca un'esperienza completa.",
+    "feature1": "Accesso a tutti i dungeon avanzati",
+    "feature2": "Slot extra per personaggi",
+    "feature3": "Skin e personalizzazioni esclusive",
+    "feature4": "Progressione illimitata",
+    "feature5": "Statistiche dettagliate e cronologia partite",
+    "feature6": "Accesso anticipato a nuove feature",
+    "feature7": "Supporto prioritario"
+  },
+  "team": {
+    "description": "Soluzione ideale per gruppi di gioco e team collaborativi.",
+    "feature1": "Workspace condiviso",
+    "feature2": "Gestione ruoli e permessi"
+  },
   "newsletter": {
   "placeholder": "La tua email",
   "submit": "Iscriviti",
