@@ -8,6 +8,7 @@ import NewsletterForm from './NewsletterForm';
 import Navbar from './Navbar';
 import CookieConsent from 'react-cookie-consent';
 import ChatbotWidget from './ChatbotWidget';
+import { useEffect } from 'react';
 
 export default function LandingPage() {
   const { t, i18n } = useTranslation();
@@ -20,6 +21,15 @@ export default function LandingPage() {
       window.plausible(goal);
     }
   };
+
+useEffect(() => {
+  const handleOpenPrivacyModal = () => setShowModal('privacy');
+  window.addEventListener('open-privacy-modal', handleOpenPrivacyModal);
+
+  return () => {
+    window.removeEventListener('open-privacy-modal', handleOpenPrivacyModal);
+  };
+}, []);
 
   return (
     <div className="pt-20 bg-gradient-to-b from-[#0f0f0f] to-[#1a1a1a] text-white font-sans scroll-smooth">
@@ -47,7 +57,7 @@ export default function LandingPage() {
             {t('heroSubtitle')}
           </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center px-6 sm:px-0">
             <Link to="/beta">
               <button
                 onClick={() => trackEvent('Partecipa alla Beta')}
@@ -182,19 +192,41 @@ export default function LandingPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black text-center py-6 text-gray-500 text-sm">
-        <p>© {year} Mini muuu. {t('footer.rights')}</p>
-        <div className="mt-2 space-x-2">
-          <a href="https://kickstarter.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">Kickstarter</a>
-          <span>·</span>
-          <a href="https://minimuuu.it" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">MiniMuuu.it</a>
-          <span>·</span>
-          <button onClick={() => setShowModal('privacy')} className="hover:text-yellow-400">{t('footer.privacy')}</button>
-          <span>·</span>
-          <button onClick={() => setShowModal('contatti')} className="hover:text-yellow-400">{t('footer.contact')}</button>
+      <footer className="bg-black text-gray-500 text-sm py-4 px-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
+          {/* Copyright */}
+          <p className="shrink-0">© {year} Mini muuu. {t('footer.rights')}</p>
+
+          {/* Link */}
+          <div className="flex flex-wrap items-center justify-center gap-2 md:justify-end">
+            <a
+              href="https://kickstarter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-yellow-400 transition"
+            >
+              Kickstarter
+            </a>
+            <span>·</span>
+            <a
+              href="https://minimuuu.it"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-yellow-400 transition"
+            >
+              MiniMuuu.it
+            </a>
+            <span>·</span>
+            <button onClick={() => setShowModal('privacy')} className="hover:text-yellow-400">
+              {t('footer.privacy')}
+            </button>
+            <span>·</span>
+            <button onClick={() => setShowModal('contatti')} className="hover:text-yellow-400">
+              {t('footer.contact')}
+            </button>
+          </div>
         </div>
       </footer>
-
       {/* COOKIE BANNER */}
       <CookieConsent
         location="bottom"

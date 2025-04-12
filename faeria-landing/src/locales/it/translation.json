@@ -48,14 +48,16 @@
     "feature2": "Gestione ruoli e permessi"
   },
   "newsletter": {
-  "placeholder": "La tua email",
-  "submit": "Iscriviti",
-  "loading": "Invio...",
-  "success": "Iscrizione completata!",
-  "error": "Errore. Riprova.",
-  "exists": "Questa email è già iscritta.",
-  "invalid": "Inserisci una email valida con un dominio conosciuto."
-    },
+    "placeholder": "La tua email",
+    "submit": "Iscriviti",
+    "loading": "Invio...",
+    "success": "Iscrizione completata con successo!",
+    "error": "Si è verificato un errore. Riprova.",
+    "exists": "Questa email è già iscritta.",
+    "invalid": "Inserisci una email valida con un dominio conosciuto.",
+    "privacyText": "Acconsento al trattamento dei dati personali secondo la <0>Privacy Policy</0>",
+    "noPrivacy": "Devi accettare la privacy policy per proseguire."
+  },
   "watchTrailer": "Guarda il trailer",
   "trailerNote": "Attiva l’audio e immergiti nella leggenda.",
   "backHome":"← Torna alla Home",
