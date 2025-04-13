@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
 
     if (email && password) {
-      localStorage.setItem('user', JSON.stringify({ email }));
-      navigate('/dashboard');
+      localStorage.setItem("user", JSON.stringify({ email }));
+      navigate("/dashboard");
     } else {
-      alert('Please enter both email and password');
+      alert("Please enter both email and password");
     }
   };
 
@@ -45,7 +45,7 @@ export default function LoginPage() {
           Log In
         </button>
         <p className="text-sm text-gray-400 text-center">
-          Don’t have an account?{' '}
+          Don’t have an account?{" "}
           <Link to="/signup" className="text-yellow-400 hover:underline">
             Sign up
           </Link>

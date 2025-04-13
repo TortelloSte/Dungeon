@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Map, Swords, Sparkles } from 'lucide-react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { Map, Swords, Sparkles } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function FeaturesBlock() {
   const { t } = useTranslation();
@@ -14,28 +14,35 @@ export default function FeaturesBlock() {
   const features = [
     {
       icon: Map,
-      title: t('feature1'),
-      description: t('Testo4'),
+      title: t("feature1"),
+      description: t("Testo4"),
     },
     {
       icon: Swords,
-      title: t('feature2'),
-      description: t('Testo5'),
+      title: t("feature2"),
+      description: t("Testo5"),
     },
     {
       icon: Sparkles,
-      title: t('feature3'),
-      description: t('Testo6'),
+      title: t("feature3"),
+      description: t("Testo6"),
     },
   ];
 
   return (
     <section className="py-20 px-6 max-w-6xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-4 text-yellow-300" data-aos="fade-up">
-        {t('featuresTitle')}
+      <h2
+        className="text-3xl font-bold mb-4 text-yellow-300"
+        data-aos="fade-up"
+      >
+        {t("featuresTitle")}
       </h2>
-      <p className="text-gray-400 mb-16 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-        {t('featuresIntro')}
+      <p
+        className="text-gray-400 mb-16 max-w-3xl mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        {t("featuresIntro")}
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
