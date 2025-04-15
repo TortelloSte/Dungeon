@@ -32,6 +32,7 @@ export default function LandingPage() {
 
   return (
     <div className="pt-20 bg-gradient-to-b from-[#0f0f0f] to-[#1a1a1a] text-white font-sans scroll-smooth">
+      {/* NAVBAR */}
       <Navbar />
 
       {/* HERO */}

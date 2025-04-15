@@ -74,7 +74,9 @@ export default function Navbar() {
             </button>
           </div>
 
-          {userName ? (
+          {/*REMOVE THIS COMMENTO TO LOGIN BUTTON INTO DASHBOARD ------->>>> IMPORTANT!!!*/}
+
+          {/*{userName ? (
             <div className="flex items-center gap-2 bg-gray-800 text-white px-3 py-1 rounded-full text-xs">
               <FaUser className="text-yellow-400" />
               {userName}
@@ -87,7 +89,7 @@ export default function Navbar() {
               <FaUser className="text-yellow-400" />
               Log In
             </RouterLink>
-          )}
+          )}*/}
         </div>
       </div>
     </nav>
