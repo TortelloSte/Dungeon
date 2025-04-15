@@ -90,7 +90,7 @@
     "error": "Something went wrong. Please try again.",
     "exists": "This email is already subscribed.",
     "invalid": "Please enter a valid email with a known domain.",
-    "privacyText": "I consent to the processing of personal data in accordance with the <0>Privacy Policy</0>",
+    "privacyText": "Yes, I wish to subscribe to the Newsletter. I confirm that I am over 16 years old. I agree to receive digital communications (via email). I consent to the processing of personal data in accordance with the <0>Privacy Policy</0>.",
     "noPrivacy": "You must accept the privacy policy to proceed."
   },
   "beta": {
@@ -121,8 +121,8 @@
     "pro": {
       "name": "Professional",
       "description": "For experienced adventurers",
-      "priceMonthly": "€10",
-      "priceYearly": "€96",
+      "priceMonthly": "€0.99",
+      "priceYearly": "€9.50",
       "features": [
         "All Free plan features",
         "Advanced dungeons",
@@ -135,8 +135,8 @@
     "team": {
       "name": "Team",
       "description": "For groups and cooperative parties",
-      "priceMonthly": "€18",
-      "priceYearly": "€160",
+      "priceMonthly": "€3.99",
+      "priceYearly": "€38.30",
       "features": [
         "All Pro plan features",
         "Shared progression",

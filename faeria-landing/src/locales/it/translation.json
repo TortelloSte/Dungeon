@@ -90,7 +90,7 @@
     "error": "Si è verificato un errore. Riprova.",
     "exists": "Questa email è già iscritta.",
     "invalid": "Inserisci una email valida con un dominio conosciuto.",
-    "privacyText": "Acconsento al trattamento dei dati personali secondo la <0>Privacy Policy</0>",
+    "privacyText":"Si desidero iscrivermi alla Newsletter. Confermo di avere più di 16 anni. Desidero ricevere comunicazioni digitali (via e-mail). Acconsento al trattamento dei dati personali secondo la <0>Privacy Policy</0>",
     "noPrivacy": "Devi accettare la privacy policy per proseguire."
   },
   "beta": {
@@ -121,8 +121,8 @@
     "pro": {
       "name": "Professional",
       "description": "Per avventurieri esperti",
-      "priceMonthly": "€10",
-      "priceYearly": "€96",
+      "priceMonthly": "€0.99",
+      "priceYearly": "€9.50",
       "features": [
         "Tutte le funzionalità del piano Free",
         "Dungeon avanzati",
@@ -135,8 +135,8 @@
     "team": {
       "name": "Team",
       "description": "Per gruppi e party cooperativi",
-      "priceMonthly": "€18",
-      "priceYearly": "€160",
+      "priceMonthly": "€3.99",
+      "priceYearly": "€38.30",
       "features": [
         "Tutte le funzionalità del piano Pro",
         "Progressione condivisa",
