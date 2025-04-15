@@ -1,71 +1,37 @@
 {
-    "heroTitle": "'Not' MINI Crawler",
-    "loading": "Loading...",
-    "heroSubtitle": "Un viaggio epico nel cuore delle tenebre",
-    "cta": "Partecipa alla Beta",
-    "Coming":"Coming soon...",
-    "betaDesc":"Stiamo preparando qualcosa di speciale. Lascia la tua email per ricevere l’accesso anticipato e novità esclusive.",
-    "whatIsTitle": "Cos'è 'Not' MINI Crawler?",
-    "Testo1":"Qui non entri in un mondo... lo crei.",
-    "Testo2": "Costruisci la tua avventura su misura, partendo dall’inizio: scegli come nasce il tuo eroe, quale sentiero seguirà e cosa troverà lungo la strada.",
-    "Testo3":"Esplora rovine dimenticate, combatti creature leggendarie e modifica ogni elemento del mondo che ti circonda.",
-    "Testo7" : "Da solo o con i tuoi compagni, ogni storia è diversa. Ogni scelta ha un peso.",
-    "Testo8" : "Questo non è un gioco che ti guida.",
-    "Testo9" : "È un mondo che ti ascolta.",
-    "trailerTitle": "Trailer Ufficiale",
-    "featuresTitle": "Perchè sceglierci?",
-    "featuresIntro": "Scopri le caratteristiche che rendono unico il nostro gioco: ogni partita sarà una nuova avventura.",
-    "Testo4":"Ogni avventura si svolge su una mappa generata proceduralmente. Nessun dungeon è mai lo stesso. Ogni volta, un mondo da scoprire.",
-    "Testo5":"Affronta nemici imprevedibili con un sistema a turni profondo e dinamico. Ogni battaglia è una sfida diversa.",
-    "Testo6":"Ogni eroe è diverso: generato o creato su misura, con storie, abilità e tratti che rendono ogni partita unica.",
-    "feature1": "Mappe sempre nuove",
-    "feature2": "Combattimento strategico a turni",
-    "feature3": "Personaggi unici e irripetibili",
-    "newsletterTitle": "Resta aggiornato su 'Not' MINI Crawler",
-    "newsletterDesc": "Iscriviti per ricevere chiavi beta, aggiornamenti e novità.",
-    "comparisonTitle": "Free vs Premium",
-    "free": {
-      "label": "Free",
-      "feature1": "Personaggio generato casualmente",
-      "feature2": "Accesso base ai dungeon",
-      "feature3": "Inventario annotabile",
-      "feature4": "Progressione limitata",
-      "description": "Inizia il tuo viaggio gratuitamente, senza impegno."
-    },
-    "premium": {
-    "description": "Perfetto per chi cerca un'esperienza completa.",
-    "feature1": "Accesso a tutti i dungeon avanzati",
-    "feature2": "Slot extra per personaggi",
-    "feature3": "Skin e personalizzazioni esclusive",
-    "feature4": "Progressione illimitata",
-    "feature5": "Statistiche dettagliate e cronologia partite",
-    "feature6": "Accesso anticipato a nuove feature",
-    "feature7": "Supporto prioritario"
-  },
-  "team": {
-    "description": "Soluzione ideale per gruppi di gioco e team collaborativi.",
-    "feature1": "Workspace condiviso",
-    "feature2": "Gestione ruoli e permessi"
-  },
-  "newsletter": {
-    "placeholder": "La tua email",
-    "submit": "Iscriviti",
-    "loading": "Invio...",
-    "success": "Iscrizione completata con successo!",
-    "error": "Si è verificato un errore. Riprova.",
-    "exists": "Questa email è già iscritta.",
-    "invalid": "Inserisci una email valida con un dominio conosciuto.",
-    "privacyText": "Acconsento al trattamento dei dati personali secondo la <0>Privacy Policy</0>",
-    "noPrivacy": "Devi accettare la privacy policy per proseguire."
-  },
+  "heroTitle": "'Not' MINI Crawler",
+  "loading": "Loading...",
+  "heroSubtitle": "Un viaggio epico nel cuore delle tenebre",
+  "cta": "Partecipa alla Beta",
+  "Coming": "Coming soon...",
+  "videotexts": "Your browser does not support the video tag.",
+  "betaDesc": "Stiamo preparando qualcosa di speciale. Lascia la tua email per ricevere l’accesso anticipato e novità esclusive.",
+  "whatIsTitle": "Cos'è 'Not' MINI Crawler?",
+  "Testo1": "Qui non entri in un mondo... lo crei.",
+  "Testo2": "Costruisci la tua avventura su misura, partendo dall’inizio: scegli come nasce il tuo eroe, quale sentiero seguirà e cosa troverà lungo la strada.",
+  "Testo3": "Esplora rovine dimenticate, combatti creature leggendarie e modifica ogni elemento del mondo che ti circonda.",
+  "Testo7": "Da solo o con i tuoi compagni, ogni storia è diversa. Ogni scelta ha un peso.",
+  "Testo8": "Questo non è un gioco che ti guida.",
+  "Testo9": "È un mondo che ti ascolta.",
+  "trailerTitle": "Trailer Ufficiale",
+  "featuresTitle": "Perchè sceglierci?",
+  "featuresIntro": "Scopri le caratteristiche che rendono unico il nostro gioco: ogni partita sarà una nuova avventura.",
+  "Testo4": "Ogni avventura si svolge su una mappa generata proceduralmente. Nessun dungeon è mai lo stesso. Ogni volta, un mondo da scoprire.",
+  "Testo5": "Affronta nemici imprevedibili con un sistema a turni profondo e dinamico. Ogni battaglia è una sfida diversa.",
+  "Testo6": "Ogni eroe è diverso: generato o creato su misura, con storie, abilità e tratti che rendono ogni partita unica.",
+  "feature1": "Mappe sempre nuove",
+  "feature2": "Combattimento strategico a turni",
+  "feature3": "Personaggi unici e irripetibili",
+  "newsletterTitle": "Resta aggiornato su 'Not' MINI Crawler",
+  "newsletterDesc": "Iscriviti per ricevere chiavi beta, aggiornamenti e novità.",
   "watchTrailer": "Guarda il trailer",
   "trailerNote": "Attiva l’audio e immergiti nella leggenda.",
-  "backHome":"← Torna alla Home",
+  "backHome": "← Torna alla Home",
   "footer": {
-  "rights": "Tutti i diritti riservati.",
-  "privacy": "Privacy",
-  "terms": "Termini",
-  "contact": "Contatti"
+    "rights": "Tutti i diritti riservati.",
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "contact": "Contatti"
   },
   "cookie": {
     "accept": "Accetta",
@@ -73,10 +39,10 @@
     "link": "Privacy Policy"
   },
   "modal": {
-  "privacy": "Tutti i contenuti presenti su questo sito, inclusi testi, immagini, grafica, musica e codice, sono protetti da copyright e appartengono a Mini Muuu™ o ai rispettivi autori. È vietata la riproduzione, la modifica o la distribuzione non autorizzata.\n\nRaccogliamo solo le informazioni strettamente necessarie, come l’indirizzo email per la newsletter o l’accesso al sito. I dati sono trattati nel rispetto del Regolamento Europeo GDPR. Non saranno mai ceduti a terzi. Puoi richiedere la cancellazione scrivendo a teamminimuuu@gmail.com.\n\nL’utilizzo del sito implica l’accettazione di queste condizioni.",
-  "contatti": "Per richieste, segnalazioni o supporto puoi contattarci via email all’indirizzo teamminimuuu@gmail.com. Cerchiamo di rispondere entro 48 ore. Se hai bisogno urgente, puoi usare anche la chat live disponibile sul sito durante gli orari attivi."
+    "privacy": "Tutti i contenuti presenti su questo sito, inclusi testi, immagini, grafica, musica e codice, sono protetti da copyright e appartengono a Mini Muuu™ o ai rispettivi autori. È vietata la riproduzione, la modifica o la distribuzione non autorizzata.\n\nRaccogliamo solo le informazioni strettamente necessarie, come l’indirizzo email per la newsletter o l’accesso al sito. I dati sono trattati nel rispetto del Regolamento Europeo GDPR. Non saranno mai ceduti a terzi. Puoi richiedere la cancellazione scrivendo a teamminimuuu@gmail.com.\n\nL’utilizzo del sito implica l’accettazione di queste condizioni.",
+    "contatti": "Per richieste, segnalazioni o supporto puoi contattarci via email all’indirizzo teamminimuuu@gmail.com. Cerchiamo di rispondere entro 48 ore. Se hai bisogno urgente, puoi usare anche la chat live disponibile sul sito durante gli orari attivi."
   },
-    "chat": {
+  "chat": {
     "label": "Chatta con noi",
     "title": "Serve aiuto?",
     "choose": "Scegli una domanda oppure contattaci direttamente:",
@@ -111,19 +77,74 @@
       "success": "Messaggio inviato! Ti risponderemo presto."
     },
     "errors": {
-    "invalidEmail": "Email non valida.",
-    "badWords": "Il messaggio contiene termini non consentiti.",
-    "generic": "Errore durante l'invio. Riprova più tardi."
-  }
+      "invalidEmail": "Email non valida.",
+      "badWords": "Il messaggio contiene termini non consentiti.",
+      "generic": "Errore durante l'invio. Riprova più tardi."
+    }
+  },
+  "newsletter": {
+    "placeholder": "La tua email",
+    "submit": "Iscriviti",
+    "loading": "Invio...",
+    "success": "Iscrizione completata con successo!",
+    "error": "Si è verificato un errore. Riprova.",
+    "exists": "Questa email è già iscritta.",
+    "invalid": "Inserisci una email valida con un dominio conosciuto.",
+    "privacyText": "Acconsento al trattamento dei dati personali secondo la <0>Privacy Policy</0>",
+    "noPrivacy": "Devi accettare la privacy policy per proseguire."
   },
   "beta": {
-  "placeholder": "La tua email",
-  "submit": "Partecipa alla Beta",
-  "success": "Iscrizione completata con successo!",
-  "duplicate": "Questa email è già registrata.",
-  "error": "Si è verificato un errore. Riprova."
+    "placeholder": "La tua email",
+    "submit": "Partecipa alla Beta",
+    "success": "Iscrizione completata con successo!",
+    "duplicate": "Questa email è già registrata.",
+    "error": "Si è verificato un errore. Riprova."
+  },
+  "comparisonTitle": "Confronta i Piani",
+  "billingMonthly": "Mensile",
+  "billingYearly": "Annuale",
+  "billingYearlyDiscount": "(–20%)",
+  "plans": {
+    "free": {
+      "name": "Free",
+      "description": "Accesso base con funzionalità limitate",
+      "priceMonthly": "€0",
+      "priceYearly": "€0",
+      "features": [
+        "Accesso ai dungeon base",
+        "Progressione limitata",
+        "Inventario annotabile",
+        "Personaggi casuali"
+      ],
+      "button": "Inizia gratis"
+    },
+    "pro": {
+      "name": "Professional",
+      "description": "Per avventurieri esperti",
+      "priceMonthly": "€10",
+      "priceYearly": "€96",
+      "features": [
+        "Tutte le funzionalità del piano Free",
+        "Dungeon avanzati",
+        "Personaggi personalizzabili",
+        "Statistiche salvate",
+        "Oggetti rari e inventario esteso"
+      ],
+      "button": "Sblocca Pro"
+    },
+    "team": {
+      "name": "Team",
+      "description": "Per gruppi e party cooperativi",
+      "priceMonthly": "€18",
+      "priceYearly": "€160",
+      "features": [
+        "Tutte le funzionalità del piano Pro",
+        "Progressione condivisa",
+        "Gestione team e ruoli",
+        "Matchmaking per party",
+        "Evento esclusivo mensile"
+      ],
+      "button": "Attiva Team Plan"
+    }
+  }
 }
-
-}
-
-

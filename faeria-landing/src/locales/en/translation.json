@@ -1,56 +1,32 @@
 {
-    "heroTitle": "'Not' MINI Crawler",
-    "loading": "Loading...",
-    "heroSubtitle": "An epic journey into the heart of darkness",
-    "cta": "Join the Beta",
-    "Coming":"Coming soon...",
-    "betaDesc":"We are preparing something special. Leave your email to receive early access and exclusive news.",
-    "whatIsTitle": "What is 'Not' MINI Crawler?",
-    "Testo1": "Here, you don’t just enter a world… you shape it.",
-    "Testo2": "Craft your own adventure from the very beginning: choose how your hero is born, what path they follow, and what they’ll face along the way.",
-    "Testo3": "Explore forgotten ruins, battle legendary creatures, and alter every element of the world around you.",
-    "Testo7": "Alone or with your companions, every story is different. Every choice matters.",
-    "Testo8": "This isn’t a game that leads you.",
-    "Testo9": "It’s a world that listens.",
-    "trailerTitle": "Official Trailer",
-    "featuresTitle": "Key Features",
-    "Testo4": "Unique procedurally generated dungeons with mysterious events and hidden paths.",
-    "Testo5": "Turn-based system that influences every fight, decision, and character development.",
-    "Testo6": "Every hero is different: you can create one with unique abilities or discover random ones.",
-    "feature1": "Procedural World",
-    "feature2": "Tactical Combat",
-    "feature3": "Unique Heroes",
-    "newsletterTitle": "Stay updated on 'Not' MINI Crawler",
-    "newsletterDesc": "Sign up to get beta keys, updates and news.",
-    "comparisonTitle": "Free vs Premium",
-    "free": {
-      "label": "Free",
-      "feature1": "Randomly generated character",
-      "feature2": "Basic dungeon access",
-      "feature3": "Note-based inventory",
-      "feature4": "Limited progression",
-      "description": "Start your journey for free, no commitment."
-    },
-    "premium": {
-      "label": "Premium",
-      "feature1": "Advanced character creation",
-      "feature2": "Unlocked classes and races",
-      "feature3": "Exclusive dungeons and legendary rewards",
-      "feature4": "Customizable stats",
-      "description": "Unleash your hero's full potential with Premium."
-    },
-  "newsletter": {
-  "placeholder": "Your email",
-  "submit": "Subscribe",
-  "loading": "Sending...",
-  "success": "Successfully subscribed!",
-  "error": "Error. Please try again.",
-  "exists": "This email is already subscribed.",
-  "invalid": "Please enter a valid email with a known domain."
-  },
+  "heroTitle": "'Not' MINI Crawler",
+  "loading": "Loading...",
+  "heroSubtitle": "An epic journey into the heart of darkness",
+  "cta": "Join the Beta",
+  "Coming": "Coming soon...",
+  "videotexts": "Your browser does not support the video tag.",
+  "betaDesc": "We’re preparing something special. Leave your email to get early access and exclusive news.",
+  "whatIsTitle": "What is 'Not' MINI Crawler?",
+  "Testo1": "Here you don’t enter a world... you create it.",
+  "Testo2": "Build your own adventure from scratch: choose how your hero is born, which path they will follow, and what they'll encounter along the way.",
+  "Testo3": "Explore forgotten ruins, fight legendary creatures, and shape every element of the world around you.",
+  "Testo7": "Alone or with your companions, every story is unique. Every choice matters.",
+  "Testo8": "This is not a game that guides you.",
+  "Testo9": "It's a world that listens.",
+  "trailerTitle": "Official Trailer",
+  "featuresTitle": "Why choose us?",
+  "featuresIntro": "Discover the features that make our game unique: every session is a new adventure.",
+  "Testo4": "Each adventure unfolds on a procedurally generated map. No dungeon is ever the same. Every time, a world to explore.",
+  "Testo5": "Face unpredictable enemies in a deep and dynamic turn-based system. Every battle is a different challenge.",
+  "Testo6": "Every hero is different: generated or custom-built, with stories, skills, and traits that make every game unique.",
+  "feature1": "Always-new maps",
+  "feature2": "Strategic turn-based combat",
+  "feature3": "Unique and unrepeatable characters",
+  "newsletterTitle": "Stay updated on 'Not' MINI Crawler",
+  "newsletterDesc": "Subscribe to get beta keys, updates, and news.",
   "watchTrailer": "Watch the trailer",
-  "trailerNote": "Turn on the sound and step into the legend.",
-  "backHome":"← Back to HomePage",
+  "trailerNote": "Turn on the sound and dive into the legend.",
+  "backHome": "← Back to Home",
   "footer": {
     "rights": "All rights reserved.",
     "privacy": "Privacy",
@@ -59,60 +35,116 @@
   },
   "cookie": {
     "accept": "Accept",
-    "message": "We use cookies to improve your experience. By continuing, you agree to our",
+    "message": "We use cookies to improve your user experience. By continuing, you accept our",
     "link": "Privacy Policy"
   },
   "modal": {
-    "privacy": "All content on this site — including texts, images, graphics, music, and code — is protected by copyright and belongs to Mini Muuu™ or its respective authors. Unauthorized reproduction, modification, or distribution is strictly prohibited.\n\nWe only collect essential information, such as email addresses for the newsletter or login. All data is processed in accordance with the European GDPR regulation and will never be shared with third parties. You can request data removal by writing to teamminimuuu@gmail.com.\n\nUsing this site implies acceptance of these terms.",
-    "contatti": "For requests, reports or support you can contact us via email at teamminimuuu@gmail.com. We try to respond within 48 hours. If you have an urgent need, you can also use the live chat available on the site during active hours."
+    "privacy": "All content on this site, including text, images, graphics, music, and code, is protected by copyright and belongs to Mini Muuu™ or their respective authors. Reproduction, modification, or unauthorized distribution is prohibited.\n\nWe only collect essential information, such as email addresses for newsletter or site access. Data is handled in accordance with the European GDPR. It will never be shared with third parties. You can request deletion by emailing teamminimuuu@gmail.com.\n\nUse of the site implies acceptance of these terms.",
+    "contatti": "For requests, reports, or support, you can contact us via email at teamminimuuu@gmail.com. We try to respond within 48 hours. If urgent, you can also use the live chat available during active hours."
   },
   "chat": {
-  "label": "Chat with us",
-  "title": "Need help?",
-  "choose": "Choose a question or contact us directly:",
-  "back": "Go back",
-  "otherQuestions": "Still have questions? Write to us",
-  "faq1": {
-    "q": "How can I join the beta?",
-    "a": "You can sign up by clicking 'Join the Beta' on the homepage. We'll email you with updates."
+    "label": "Chat with us",
+    "title": "Need help?",
+    "choose": "Choose a question or contact us directly:",
+    "back": "Go back",
+    "otherQuestions": "Have more questions? Write to us",
+    "faq1": {
+      "q": "How can I join the beta?",
+      "a": "You can sign up by clicking 'Join the Beta' on the homepage and you’ll receive updates via email."
+    },
+    "faq2": {
+      "q": "Will the game be free?",
+      "a": "Yes, there will be a free version with optional premium content."
+    },
+    "faq3": {
+      "q": "Can I play with my friends?",
+      "a": "Absolutely! You can create shared adventures and experience it together."
+    },
+    "faq4": {
+      "q": "When will the game be released?",
+      "a": "We’re working hard! The official date will be announced via newsletter and social media."
+    },
+    "faq5": {
+      "q": "Can I create my own character?",
+      "a": "Yes! The character creation system is one of the core features of the game."
+    },
+    "form": {
+      "name": "Name",
+      "surname": "Surname",
+      "email": "Your email",
+      "message": "Write your message...",
+      "send": "Send",
+      "success": "Message sent! We'll get back to you soon."
+    },
+    "errors": {
+      "invalidEmail": "Invalid email.",
+      "badWords": "The message contains forbidden words.",
+      "generic": "Error sending message. Please try again later."
+    }
   },
-  "faq2": {
-    "q": "Is the game free?",
-    "a": "Yes, there will be a free version, with optional premium content."
+  "newsletter": {
+    "placeholder": "Your email",
+    "submit": "Subscribe",
+    "loading": "Sending...",
+    "success": "Successfully subscribed!",
+    "error": "Something went wrong. Please try again.",
+    "exists": "This email is already subscribed.",
+    "invalid": "Please enter a valid email with a known domain.",
+    "privacyText": "I consent to the processing of personal data in accordance with the <0>Privacy Policy</0>",
+    "noPrivacy": "You must accept the privacy policy to proceed."
   },
-  "faq3": {
-    "q": "Can I play with friends?",
-    "a": "Absolutely! You can create shared adventures and enjoy the game together."
+  "beta": {
+    "placeholder": "Your email",
+    "submit": "Join the Beta",
+    "success": "Successfully subscribed!",
+    "duplicate": "This email is already registered.",
+    "error": "Something went wrong. Please try again."
   },
-  "faq4": {
-    "q": "When is the game coming out?",
-    "a": "We’re working hard on it! The official release date will be announced via newsletter and socials."
-  },
-  "faq5": {
-    "q": "Can I create my own character?",
-    "a": "Yes! The character creation system is a key feature of the game."
-  },
-  "form": {
-    "name": "First name",
-    "surname": "Last name",
-    "email": "Your email",
-    "message": "Write your message...",
-    "send": "Send",
-    "success": "Message sent! We’ll get back to you soon."
-  },
-  "errors": {
-    "invalidEmail": "Invalid email address.",
-    "badWords": "Your message contains inappropriate words.",
-    "generic": "Something went wrong while sending your message. Please try again later."
+  "comparisonTitle": "Compare Plans",
+  "billingMonthly": "Monthly",
+  "billingYearly": "Yearly",
+  "billingYearlyDiscount": "(–20%)",
+  "plans": {
+    "free": {
+      "name": "Free",
+      "description": "Basic access with limited features",
+      "priceMonthly": "€0",
+      "priceYearly": "€0",
+      "features": [
+        "Access to basic dungeons",
+        "Limited progression",
+        "Annotatable inventory",
+        "Random characters"
+      ],
+      "button": "Start for Free"
+    },
+    "pro": {
+      "name": "Professional",
+      "description": "For experienced adventurers",
+      "priceMonthly": "€10",
+      "priceYearly": "€96",
+      "features": [
+        "All Free plan features",
+        "Advanced dungeons",
+        "Customizable characters",
+        "Saved statistics",
+        "Rare items and extended inventory"
+      ],
+      "button": "Unlock Pro"
+    },
+    "team": {
+      "name": "Team",
+      "description": "For groups and cooperative parties",
+      "priceMonthly": "€18",
+      "priceYearly": "€160",
+      "features": [
+        "All Pro plan features",
+        "Shared progression",
+        "Team and role management",
+        "Party matchmaking",
+        "Exclusive monthly event"
+      ],
+      "button": "Activate Team Plan"
+    }
   }
-},
-"beta": {
-  "placeholder": "Your email",
-  "submit": "Join the Beta",
-  "success": "Successfully joined the beta!",
-  "duplicate": "This email is already registered.",
-  "error": "An error occurred. Please try again."
 }
-
-} 
-    

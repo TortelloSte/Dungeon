@@ -4,7 +4,27 @@
 
 ---
 
-## [1.0.0] - 2025-04-06
+## [1.1.0] – 2025-04-15
+
+### 🧼 Refactored
+- 🧱 Full modularization of page sections into independent components (`HeroSection`, `FeaturesSection`, `TrailerSection`, `NewsletterForm`, `Footer`, etc.).
+- 🗂️ Cleaned up imports and removed unused code (e.g. unused `Link`).
+- 🗨️ Moved dynamic modals for privacy/contact into conditional JSX with translation support.
+- 🌐 Improved structure of `translation.json` (consolidated pricing plans, removed redundancy).
+- ⚡ Removed UI buttons from PremiumComparison (temporarily disabled, left in-code as comments).
+- 🌍 Added accessibility roles and labels where applicable (modals, forms, chatbot).
+- 🪄 Minor UI tweaks for consistency across all screen sizes.
+
+### ✅ Fixed
+- ✅ Duplicate `useEffect` import removed.
+- ✅ Removed unused state (`showPrivacy`).
+- ✅ Prevented page scroll when modal is open.
+- ✅ Smoothed animation and structure for cookie consent banner.
+- ✅ Fixed spacing and alignment in pricing grid on small viewports.
+
+---
+
+## [1.0.0] – 2025-04-06
 
 ### ✨ Added
 - 💥 Hero section with animated title, subtitle and two CTAs (“Join Beta” + “Watch Trailer”).
@@ -21,15 +41,6 @@
 - 🎨 Favicon icon (custom rune-inspired icon) and page title updated.
 - 📈 Analytics integration using Plausible.
 - 🧼 GitHub `.gitignore` file updated to exclude local and sensitive assets.
-
----
-
-### 🛠️ Fixed
-- ✅ Cookie banner showing again on page refresh – now properly stored.
-- ✅ Chatbot reopens with previous state – now resets on close.
-- ✅ Input alignment on Beta and Newsletter forms across all screen sizes.
-- ✅ Video trailer issues on mobile (autoplay and controls).
-- ✅ Chatbot overlapping footer and content in small viewports.
 
 ---
 
