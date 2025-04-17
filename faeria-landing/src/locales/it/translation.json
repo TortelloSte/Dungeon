@@ -146,5 +146,17 @@
       ],
       "button": "Attiva Team Plan"
     }
+  },
+  "login": {
+    "title": "Accedi a Dungeon Crawler",
+    "email": "Email",
+    "password": "Password",
+    "button": "Accedi",
+    "noAccount": "Non hai un account?",
+    "signup": "Registrati",
+    "backHome": "← Torna alla home",
+    "errorMissingFields": "Inserisci sia email che password.",
+    "errorInvalidCredentials": "Email o password non validi."
   }
+
 }
